@@ -8,10 +8,6 @@ const Card = () => {
 
   let { id } = useParams();
 
-  useEffect(() => {
-    getData();
-  }, []);
-
   const getData = async () => {
     const response = await axios.get(
       "https://api.pokemontcg.io/v2/cards?pageSize=10"
@@ -19,6 +15,12 @@ const Card = () => {
     setPokemons(response.data.data);
     console.log(pokemons);
   };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  
 
   const card = pokemons.find((pokemon) => id === String(pokemon.id));
 

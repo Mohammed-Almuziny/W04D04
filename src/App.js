@@ -1,6 +1,5 @@
 import Nav from "./components/Nav";
 import Home from "./components/Home";
-import Favorite from "./components/Favorite";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Card from "./components/Card"
@@ -15,7 +14,6 @@ function App() {
 
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Favorite" component={Favorite} />
         <Route exact path="/About" component={About} />
         <Route exact path="/Contact" component={Contact} />
         <Route exact path="/Card/:id" component={Card} />

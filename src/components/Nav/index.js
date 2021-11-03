@@ -16,17 +16,14 @@ const Nav = () => {
       <Link to="/" className="link">
         Home
       </Link>
-      <Link to="/Favorite" className="link">
+      {/* <Link to="/Favorite" className="link">
         Favorite
-      </Link>
+      </Link> */}
       <Link to="/About" className="link">
         About
       </Link>
       <Link to="/Contact" className="link">
         Contact
-      </Link>
-      <Link to="/Cards" className="link">
-        Cards
       </Link>
     </nav>
   );

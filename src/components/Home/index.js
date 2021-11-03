@@ -6,9 +6,6 @@ import "./style.css";
 const Home = () => {
   const [pokemons, setPokemons] = useState([]);
 
-  useEffect(() => {
-    getData();
-  }, []);
 
   const getData = async () => {
     const response = await fetch(
@@ -18,6 +15,12 @@ const Home = () => {
     setPokemons(body.data);
     console.log(pokemons);
   };
+  
+  useEffect(() => {
+    getData();
+  }, []);
+
+
 
   const history = useHistory();
 
