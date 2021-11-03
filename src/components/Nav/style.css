@@ -1,0 +1,14 @@
+nav {
+  text-align: center;
+
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.link {
+  margin: 1rem;
+  text-decoration: none;
+  color: black;
+}
